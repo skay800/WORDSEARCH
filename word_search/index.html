@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Corruption</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .two-column-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .two-column-list ul {
+            flex: 1;
+            list-style: none;
+            padding: 0;
+            margin: 0 20px;
+        }
+        .two-column-list li {
+            margin: 5px 0;
+        }
+        #noResults {
+            display: none;
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="glossary.html">Glossary</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <h1>Understanding Corruption: Terms and Meanings</h1>
+            <p>Educating for a Transparent and Accountable Society</p>
+            <input type="text" placeholder="Search for a term..." id="searchBar" onkeyup="filterTerms()">
+        </section>
+        <section class="intro">
+            <h2>Welcome</h2>
+            <p>This website aims to educate individuals about corruption-related terms and their meanings...</p>
+        </section>
+        <section class="quick-links">
+            <h2>Popular Terms</h2>
+            <div id="termList" class="two-column-list">
+                <ul>
+                    <li><a href="term.html?term=Bribery">Bribery</a></li>
+                    <li><a href="term.html?term=Fraud">Fraud</a></li>
+                    <li><a href="term.html?term=Embezzlement">Embezzlement</a></li>
+                    <li><a href="term.html?term=Graft">Graft</a></li>
+                    <li><a href="term.html?term=Extortion">Extortion</a></li>
+                    <li><a href="term.html?term=Nepotism">Nepotism</a></li>
+                    <li><a href="term.html?term=Kickback">Kickback</a></li>
+                    <li><a href="term.html?term=Money Laundering">Money Laundering</a></li>
+                    <li><a href="term.html?term=Cronyism">Cronyism</a></li>
+                    <li><a href="term.html?term=Collusion">Collusion</a></li>
+                </ul>
+                <ul>
+                    <li><a href="term.html?term=Blackmail">Blackmail</a></li>
+                    <li><a href="term.html?term=Patronage">Patronage</a></li>
+                    <li><a href="term.html?term=Whistleblower">Whistleblower</a></li>
+                    <li><a href="term.html?term=Accountability">Accountability</a></li>
+                    <li><a href="term.html?term=Transparency">Transparency</a></li>
+                    <li><a href="term.html?term=Integrity">Integrity</a></li>
+                    <li><a href="term.html?term=Misconduct">Misconduct</a></li>
+                    <li><a href="term.html?term=Conflict of Interest">Conflict of Interest</a></li>
+                    <li><a href="term.html?term=Impunity">Impunity</a></li>
+                    <li><a href="term.html?term=Fiduciary Duty">Fiduciary Duty</a></li>
+                </ul>
+            </div>
+            <p id="noResults">No terms found.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Contact Information | Social Media Links | Newsletter Signup</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
